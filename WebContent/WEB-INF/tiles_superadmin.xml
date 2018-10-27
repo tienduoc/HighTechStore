@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="admin_template" template="/WEB-INF/jsp/template/admin_template.jsp">
+		<put-attribute name="admin_content" value=""></put-attribute>
+	</definition>
+
+	<definition name="superadmin.index" extends="admin_template">
+		<put-attribute name="admin_content" value="/WEB-INF/jsp/admin/index.jsp"></put-attribute>
+	</definition>
+
+	<!-- ACCOUNT -->
+
+	<definition name="account.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/account/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="account.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/account/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="account.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/account/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="account.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/account/update.jsp"></put-attribute>
+	</definition>
+
+	<definition name="account.changePassword" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/account/changePassword.jsp"></put-attribute>
+	</definition>
+
+	<!-- ROLE -->
+
+	<definition name="role.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/role/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="role.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/role/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="role.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/role/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="role.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/role/update.jsp"></put-attribute>
+	</definition>
+
+	<!-- LOGS -->
+
+	<definition name="logs.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/logs/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="logs.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/superadmin/logs/detail.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>

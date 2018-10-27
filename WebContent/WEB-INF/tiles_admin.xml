@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="admin_template" template="/WEB-INF/jsp/template/admin_template.jsp">
+		<put-attribute name="admin_content" value=""></put-attribute>
+	</definition>
+	
+	<definition name="403_template" template="/WEB-INF/jsp/template/403error_template.jsp">
+		<put-attribute name="error_content" value=""></put-attribute>
+	</definition>
+
+	<definition name="admin.index" extends="admin_template">
+		<put-attribute name="admin_content" value="/WEB-INF/jsp/admin/index.jsp"></put-attribute>
+	</definition>
+
+	<!-- PRODUCER -->
+	<definition name="producer.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/producer/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="producer.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/producer/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="producer.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/producer/update.jsp"></put-attribute>
+	</definition>
+
+	<definition name="producer.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/producer/create.jsp"></put-attribute>
+	</definition>
+	<!-- PAYMENT -->
+	<definition name="payment.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/payment/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="payment.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/payment/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="payment.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/payment/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="payment.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/payment/update.jsp"></put-attribute>
+	</definition>
+
+	<!-- SUPPLIER -->
+	<definition name="supplier.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/supplier/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="supplier.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/supplier/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="supplier.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/supplier/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="supplier.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/supplier/update.jsp"></put-attribute>
+	</definition>
+
+	<!-- CATEGORY -->
+
+	<definition name="category.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/category/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="category.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/category/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="category.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/category/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="category.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/category/update.jsp"></put-attribute>
+	</definition>
+	<definition name="category.search" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/category/index.jsp"></put-attribute>
+	</definition>
+
+	<!-- Contact -->
+
+	<definition name="contact.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/contact/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="contact.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/contact/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="contact.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/contact/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="contact.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/contact/update.jsp"></put-attribute>
+	</definition>
+
+
+	<!-- ORDER -->
+
+	<definition name="orders.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/orders/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="orders.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/orders/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="orders.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/orders/update.jsp"></put-attribute>
+	</definition>
+
+	<!-- PRODUCT -->
+
+	<definition name="product.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/product/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="product.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/product/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="products.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/product/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="product.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/product/update.jsp"></put-attribute>
+	</definition>
+
+	<!-- IMPORT -->
+
+	<definition name="import.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/import/index.jsp"></put-attribute>
+	</definition>
+	<definition name="import.temp" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/import/temp.jsp"></put-attribute>
+	</definition>
+
+	<definition name="import.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/import/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="import.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/import/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="import.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/import/update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- PHOTO -->
+
+	<definition name="photo.index" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/photo/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="photo.create" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/photo/create.jsp"></put-attribute>
+	</definition>
+
+	<definition name="photo.detail" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/photo/detail.jsp"></put-attribute>
+	</definition>
+
+	<definition name="photo.update" extends="admin_template">
+		<put-attribute name="admin_content"
+			value="/WEB-INF/jsp/admin/photo/update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 403 -->
+	
+	<definition name="login.403" extends="403_template">
+    	<put-attribute name="error_content" value = "/WEB-INF/jsp/user/403.jsp"></put-attribute>
+    </definition> 
+
+</tiles-definitions>

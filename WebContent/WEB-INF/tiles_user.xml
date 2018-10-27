@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    
+    <definition name="user_template" template="/WEB-INF/jsp/template/user_template.jsp" >
+    	<put-attribute name="content" value=""></put-attribute>    
+    </definition>
+    
+    <definition name="invoice_template" template="/WEB-INF/jsp/template/invoice_template.jsp" >
+    	<put-attribute name="invoice" value=""></put-attribute>    
+    </definition>
+    
+    <definition name="home.index" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/index.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="home.test" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/test.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="product.detail" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/detail.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="product.list" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/productList.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="product.producer" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/producer.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="product.search" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/product.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="product.category" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/category.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="home.register" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/register.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="cart.beforeCheckOut" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/checkout.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="cart.index" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/cart.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="home.contact" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/contact.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="home.myAccount" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/myAccount.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="home.changePassword" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/changePassword.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="home.orderDetail" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/orderDetail.jsp"></put-attribute>
+    </definition> 
+    
+    <definition name="user.register" extends="user_template">
+    	<put-attribute name="content" value="/WEB-INF/jsp/user/register.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="home.login" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/login.jsp"></put-attribute>
+    </definition>
+        
+    <definition name="home.invoice" extends="invoice_template">
+    	<put-attribute name="invoice" value = "/WEB-INF/jsp/user/invoice.jsp"></put-attribute>
+    </definition>      
+       
+    <definition name="cart.thanks" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/thanks.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="cart.check" extends="user_template">
+    	<put-attribute name="content" value = "/WEB-INF/jsp/user/beforePay.jsp"></put-attribute>
+    </definition>
+    
+        
+ 
+</tiles-definitions>

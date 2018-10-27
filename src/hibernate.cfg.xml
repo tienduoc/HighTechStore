@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="HighTechStore">
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+        <property name="show_sql">true</property>
+		<property name="hibernate.default_schema">dbo</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+		<mapping class="base.entities.Category" />
+		<mapping class="base.entities.Contact" />
+		<mapping class="base.entities.Imports" />
+		<mapping class="base.entities.ImportDetail" />
+		<mapping class="base.entities.Orders" />
+		<mapping class="base.entities.OrderDetail" />
+		<mapping class="base.entities.OrderDetailId" />
+		<mapping class="base.entities.Item" />
+		<mapping class="base.entities.OrderStatus" />
+		<mapping class="base.entities.Payment" />
+		<mapping class="base.entities.Photo" />
+		<mapping class="base.entities.Producer" />
+		<mapping class="base.entities.Product" />
+		<mapping class="base.entities.Role" />
+		<mapping class="base.entities.Supplier" />
+		<mapping class="base.entities.Account" />
+		<mapping class="base.entities.UserRole" />
+		<mapping class="base.entities.UserRoleId" />
+		<mapping class="base.entities.Logs" />
+    </session-factory>
+</hibernate-configuration>
